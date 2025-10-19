@@ -12,6 +12,7 @@
   {
     "code": "AIG202c",
     "status": "done",
+    "spec": "/ai-foundations-for-everyone/",
     "moocs": [
       "/introduction-to-ai/",
       "/generative-ai-introduction-and-applications/",
@@ -27,6 +28,7 @@
   {
     "code": "BDI302c",
     "status": "done",
+    "spec": "/big-data/",
     "moocs": [
       "/big-data-introduction/",
       "/big-data-management/",
@@ -56,8 +58,30 @@
     "moocs": ["/ai-for-everyone/"]
   },
   {
+    "code": "DMA301m",
+    "status": "done",
+    "moocs": [
+      "/marketing-analytics/",
+      "/digital-analytics/",
+      "/assess-for-success/"
+    ]
+  },
+  {
+    "code": "DMS301m",
+    "status": "done",
+    "spec": "/digital-marketing/",
+    "moocs": [
+      "/marketing-digital/",
+      "/digital-marketing-revolution/",
+      "/marketing-channels/",
+      "/marketing-plan/",
+      "/generative-ai-prompt-engineering-for-everyone/",
+      "/prompt-engineering-generative-ai-for-marketing-advertising/"
+    ]
+  },
+  {
     "code": "DWP301c",
-    "status": "",
+    "status": "done",
     "moocs": [
       "/introduction-to-cloud/",
       "/introduction-to-web-development-with-html-css-javacript/",
@@ -84,6 +108,17 @@
     ]
   },
   {
+    "code": "EAL202c",
+    "status": "done",
+    "spec": "/speaklistenenglish/",
+    "moocs": [
+      "/note-taking/",
+      "/academic-discussion-english/",
+      "/presentations-speaking-so-that-people-listen/",
+      "/speaking-listening-capstone/"
+    ]
+  },
+  {
     "code": "ELP321c",
     "status": "",
     "moocs": []
@@ -97,6 +132,17 @@
     "code": "ECC301c",
     "status": "",
     "moocs": []
+  },
+  {
+    "code": "ECC302c",
+    "status": "done",
+    "spec": "/management-multinational-cross-cultural-teams/",
+    "moocs": [
+      "/intro-multinational-cross-cultural-teams/",
+      "/cross-cultural-communication-management/",
+      "/cross-cultural-virtual-spaces-teams/",
+      "/leadership-in-mulitnational-cross-cultural-teams/"
+    ]
   },
   {
     "code": "ENG302c",
@@ -125,8 +171,18 @@
     ]
   },
   {
+    "code": "ENW493c",
+    "status": "done",
+    "moocs": [
+      "/research-methods/",
+      "/research-methodologies/",
+      "/being-researcher/"
+    ]
+  },
+  {
     "code": "EPE301c",
     "status": "done",
+    "spec": "/professional-skills-for-the-workplace/",
     "moocs": [
       "/emotional-and-social-intelligence/",
       "/critical-thinking-skills-for-professionals/",
@@ -135,18 +191,30 @@
     ]
   },
   {
-    "code": "FRS401c",
-    "status": "",
-    "moocs": []
+    "code": "FIM302c",
+    "status": "done",
+    "spec": "/startup-valuation/",
+    "moocs": [
+      "/discounted-cash-flow/",
+      "/valuation-multiples/",
+      "/financial-ratios/",
+      "/capital-budgeting/",
+      "/valuation-for-startups-project/"
+    ]
   },
   {
-    "code": "HOM301c",
-    "status": "",
-    "moocs": ["/fundamentals-of-revenue-management", "/demandmanagement"]
+    "code": "FRS401c",
+    "status": "done",
+    "moocs": [
+      "/access-controls/",
+      "/security-operations/",
+      "/systems-and-application-security/"
+    ]
   },
   {
     "code": "HRM201c",
     "status": "done",
+    "spec": "/human-resource-management/",
     "moocs": [
       "/compensation-management/",
       "/employee-performance/",
@@ -156,8 +224,45 @@
     ]
   },
   {
+    "code": "HRM202c",
+    "status": "done",
+    "spec": "/hrci-human-resource-associate/",
+    "moocs": [
+      "/talent-acquisition/",
+      "/learning-and-development/",
+      "/compensation-and-benefits/",
+      "/employee-relations/",
+      "/compliance-and-risk-management/"
+    ]
+  },
+  {
+    "code": "IFT201c",
+    "status": "done",
+    "spec": "/futures-thinking/",
+    "moocs": [
+      "/introduction-to-futures-thinking/",
+      "/forecasting-skills/",
+      "/simulation-skills/",
+      "/collaborative-foresight/",
+      "/urgent-optimism/"
+    ]
+  },
+  {
+    "code": "IMC301c",
+    "status": "done",
+    "spec": "/marketing-mix/",
+    "moocs": [
+      "/brand-management/",
+      "/pricing-strategy/",
+      "/channel-management/",
+      "/integrated-marketing-communications/",
+      "/marketing-mix-capstone/"
+    ]
+  },
+  {
     "code": "ITA203c",
     "status": "done",
+    "spec": "/information-systems/",
     "moocs": [
       "/is-it-governance/",
       "/analysis-for-business-systems/",
@@ -173,6 +278,7 @@
   {
     "code": "ITE302c",
     "status": "done",
+    "spec": "/certified-ethical-emerging-technologist/",
     "moocs": [
       "/promote-ethical-data-driven-technologies/",
       "/ethical-frameworks-action/",
@@ -185,7 +291,8 @@
   },
   {
     "code": "ITE303c",
-    "status": "",
+    "status": "done",
+    "spec": "/ethics-in-ai/",
     "moocs": [
       "/ai-algorithm-limitations",
       "/ai-data-bias",
@@ -194,41 +301,38 @@
     ]
   },
   {
-    "code": "IFT201c",
+    "code": "LAB211",
     "status": "done",
     "moocs": [
-      "/introduction-to-futures-thinking/",
-      "/forecasting-skills/",
-      "/simulation-skills/",
-      "/collaborative-foresight/",
-      "/urgent-optimism/"
+      "/java-introduction/",
+      "/object-oriented-programming-with-java/",
+      "/object-oriented-hierarchies-java/",
+      "/java-class-library/"
     ]
-  },
-  {
-    "code": "LAB221c",
-    "status": "",
-    "moocs": []
   },
   {
     "code": "LAW201c",
     "status": "done",
-    "moocs": ["/eu-competition-law/", "/eu-law-doing-business/", "/european-law-fundamentals/"]
+    "spec": "/european-business-law/",
+    "moocs": [
+      "/eu-competition-law/",
+      "/eu-law-doing-business/",
+      "/european-law-fundamentals/"
+    ]
   },
   {
-    "code": "MSM201c",
-    "status": "",
+    "code": "MCO201c",
+    "status": "done",
     "moocs": [
-      "/social-media-marketing-introduction",
-      "/social-media-management",
-      "/social-media-advertising-fundamentals",
-      "/advertising-with-facebook",
-      "/measure-and-optimize-social-media-marketing-campaigns",
-      "/facebook-social-media-marketing-capstone"
+      "/transmedia-storytelling/",
+      "/communicate-with-impact/",
+      "/brand-and-content-marketing/"
     ]
   },
   {
     "code": "MKT205c",
     "status": "done",
+    "spec": "/international-marketing/",
     "moocs": [
       "/intro-international-marketing/",
       "/international-marketing-entry-execution/",
@@ -241,6 +345,7 @@
   {
     "code": "MKT208c",
     "status": "done",
+    "spec": "/social-media-marketing/",
     "moocs": [
       "/what-is-social/",
       "/importance-of-listening/",
@@ -251,23 +356,44 @@
     ]
   },
   {
+    "code": "MSM201c",
+    "status": "done",
+    "spec": "/facebook-social-media-marketing/",
+    "moocs": [
+      "/social-media-marketing-introduction/",
+      "/social-media-management/",
+      "/social-media-advertising-fundamentals/",
+      "/advertising-with-facebook/",
+      "/measure-and-optimize-social-media-marketing-campaigns/",
+      "/facebook-social-media-marketing-capstone/"
+    ]
+  },
+  {
     "code": "NLP301c",
-    "status": "",
-    "moocs": []
+    "status": "done",
+    "spec": "/natural-language-processing/",
+    "moocs": [
+      "/classification-vector-spaces-in-nlp/",
+      "/probabilistic-models-in-nlp/",
+      "/sequence-models-in-nlp/",
+      "/attention-models-in-nlp/"
+    ]
   },
   {
     "code": "NWC203c",
-    "status": "",
+    "status": "done",
+    "spec": "/computer-communications/",
     "moocs": [
-      "/fundamentals-network-communications",
-      "/peer-to-peer-protocols-local-area-networks",
-      "/packet-switching-networks-algorithms",
-      "/tcp-ip-advanced"
+      "/fundamentals-network-communications/",
+      "/peer-to-peer-protocols-local-area-networks/",
+      "/packet-switching-networks-algorithms/",
+      "/tcp-ip-advanced/"
     ]
   },
   {
     "code": "OBE102c",
     "status": "done",
+    "spec": "/hr-management-leadership/",
     "moocs": [
       "/visionary-leadership-meaning-maker/",
       "/leadership-adapt-your-style/",
@@ -278,22 +404,12 @@
   {
     "code": "PMG201c",
     "status": "done",
+    "spec": "/project-management/",
     "moocs": [
       "/project-planning/",
       "/schedule-projects/",
       "/project-risk-management/",
       "/project-management-capstone/"
-    ]
-  },
-  {
-    "code": "PRP201c",
-    "status": "done",
-    "moocs": [
-      "/python/",
-      "/python-data/",
-      "/python-network-data/",
-      "/python-databases/",
-      "/python-data-visualization/"
     ]
   },
   {
@@ -322,8 +438,21 @@
     ]
   },
   {
+    "code": "PRP201c",
+    "status": "done",
+    "spec": "/python/",
+    "moocs": [
+      "/python/",
+      "/python-data/",
+      "/python-network-data/",
+      "/python-databases/",
+      "/python-data-visualization/"
+    ]
+  },
+  {
     "code": "SEO201c",
     "status": "done",
+    "spec": "/seo/",
     "moocs": [
       "/search-engine-optimization/",
       "/seo-fundamentals/",
@@ -333,8 +462,20 @@
     ]
   },
   {
+    "code": "SSC302c",
+    "status": "done",
+    "spec": "/public-speaking/",
+    "moocs": [
+      "/public-speaking",
+      "/inform-speech",
+      "/persuade-speech",
+      "/speak-to-inspire-ceremonial-motivational-speeches"
+    ]
+  },
+  {
     "code": "SSL101c",
     "status": "done",
+    "spec": "/academic-skills/",
     "moocs": [
       "/digital-literacy/",
       "/problem-solving-skills/",
@@ -346,6 +487,7 @@
   {
     "code": "SWE201c",
     "status": "done",
+    "spec": "/software-development-lifecycle/",
     "moocs": [
       "/software-processes/",
       "/agile-software-development/",
@@ -354,18 +496,9 @@
     ]
   },
   {
-    "code": "SSC302c",
-    "status": "",
-    "moocs": [
-      "/public-speaking",
-      "/inform-speech",
-      "/persuade-speech",
-      "/speak-to-inspire-ceremonial-motivational-speeches"
-    ]
-  },
-  {
     "code": "SYB302c",
     "status": "done",
+    "spec": "/business-entrepreneurship/",
     "moocs": [
       "/innovative-ideas/",
       "/innovative-entrepreneur/",
@@ -374,13 +507,9 @@
     ]
   },
   {
-    "code": "WED201c",
-    "status": "done",
-    "moocs": ["/html/", "/introcss/", "/javascript/", "/responsivedesign/"]
-  },
-  {
     "code": "WDU202c",
     "status": "done",
+    "spec": "/ui-ux-design/",
     "moocs": [
       "/visual-elements-user-interface-design/",
       "/ux-design-fundamentals/",
@@ -391,6 +520,7 @@
   {
     "code": "WDU203c",
     "status": "done",
+    "spec": "/michiganux/",
     "moocs": [
       "/introtoux-principles-and-processes/",
       "/understanding-user-needs/",
@@ -398,6 +528,18 @@
       "/ux-design-concept-wireframe/",
       "/ux-research-at-scale/",
       "/user-experience-capstone/"
+    ]
+  },
+  {
+    "code": "WED201c",
+    "status": "done",
+    "spec": "/web-design/",
+    "moocs": [
+      "/html/",
+      "/introcss/",
+      "/javascript/",
+      "/responsivedesign/",
+      "/web-design-project/"
     ]
   }
 ]
