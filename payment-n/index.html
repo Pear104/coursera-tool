@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-gray-900 quicksand">
+    <div class="max-w-2xl mx-auto p-8 w-full">
+      <div class="glass-card rounded-3xl p-10 fade-in-up">
+        <div class="icon-wrapper floating">
+          <svg
+            class="w-10 h-10 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+            ></path>
+          </svg>
+        </div>
+
+        <h1
+          class="text-4xl font-bold mb-6 text-white text-center uppercase tracking-wide"
+          style="text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2)"
+        >
+          Ủng hộ nhiều tài khoản
+        </h1>
+
+        <div class="text-center mb-6 hidden">
+          <span class="email-counter" id="email-counter">0 / 10 tài khoản</span>
+        </div>
+
+        <form
+          class="w-full"
+          id="payment-form"
+          onsubmit="makePayment(); return false;"
+        >
+          <div
+            id="arrayContainer"
+            class="space-y-3 my-6 max-h-[35vh] overflow-y-auto pr-2"
+          >
+            <div class="flex items-center gap-3 array-item w-full">
+              <div class="flex-grow w-full">
+                <input
+                  type="text"
+                  id="item-1"
+                  placeholder="Nhập email Coursera"
+                  class="input-field px-4 py-3 rounded-xl w-full focus:outline-none transition-all duration-200"
+                  oninput="updateArrayData()"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-3 mb-6">
+            <button
+              type="button"
+              onclick="addItem()"
+              class="add-btn text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2"
+            >
+              <span class="text-xl">+</span>
+              THÊM
+            </button>
+            <input
+              id="submit-button"
+              type="submit"
+              value="THANH TOÁN NGAY"
+              class="submit-btn rounded-xl py-3 px-6 text-white font-bold w-full cursor-pointer uppercase tracking-wider"
+            />
+          </div>
+
+          <div class="flex justify-between items-center gap-4 mb-4">
+            <a href="/" class="link-hover pb-1"><- Quay lại</a>
+            <a href="/payment" class="link-hover pb-1">Ủng hộ 1 -></a>
+          </div>
+
+          <div class="info-text text-base text-justify">
+            Sau khi chuyển khoản, nếu có lỗi xảy ra hoặc tài khoản chưa được
+            kích hoạt, liên hệ tớ qua
+            <a
+              href="https://www.facebook.com/truong.le.567651"
+              target="_blank"
+              class="link-hover"
+            >
+              Facebook
+            </a>
+            để tiện trao đổi nhé!
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      let itemCount = 1;
+      let arrayData = [];
+      const submitButton = document.getElementById("submit-button");
+      const emailCounter = document.getElementById("email-counter");
+
+      function updateCounter() {
+        const count = arrayData.length;
+        emailCounter.textContent = `${count} / 10 tài khoản`;
+        if (count >= 10) {
+          emailCounter.style.background =
+            "linear-gradient(135deg, rgba(239, 68, 68, 0.3) 0%, rgba(220, 38, 38, 0.3) 100%)";
+        } else {
+          emailCounter.style.background =
+            "linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%)";
+        }
+      }
+
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function validateAllEmails() {
+        updateArrayData();
+        if (arrayData.length === 0) {
+          alert("Vui lòng nhập ít nhất một email!");
+          return false;
+        }
+        const invalidEmails = [];
+        const emailInputs = document.querySelectorAll("#arrayContainer input");
+        arrayData.forEach((email, index) => {
+          emailInputs[index].classList.remove("error");
+          if (!isValidEmail(email)) {
+            invalidEmails.push({
+              email: email,
+              index: index,
+              element: emailInputs[index],
+            });
+          }
+        });
+        if (invalidEmails.length > 0) {
+          const invalidEmailList = invalidEmails
+            .map((item) => `• ${item.email || "Trống"}`)
+            .join("\n");
+          alert(
+            `Các email sau không đúng định dạng:\n\n${invalidEmailList}\n\nVui lòng kiểm tra lại!`
+          );
+          invalidEmails.forEach((item) => {
+            if (item.element) {
+              item.element.classList.add("error");
+            }
+          });
+          if (invalidEmails[0].element) {
+            invalidEmails[0].element.focus();
+          }
+          return false;
+        }
+        return true;
+      }
+
+      async function makePayment() {
+        updateArrayData();
+        if (!validateAllEmails()) {
+          return false;
+        }
+        submitButton.disabled = true;
+        submitButton.value = "Đang xử lý...";
+
+        const validEmails = arrayData.filter(
+          (email) => email && email.trim() !== ""
+        );
+        if (validEmails.length > 10) {
+          alert("Tối đa chỉ 10 tài khoản mỗi lần");
+          submitButton.disabled = false;
+          submitButton.value = "THANH TOÁN NGAY";
+          return;
+        }
+        const body = JSON.stringify(validEmails);
+        try {
+          const parsedBody = JSON.parse(body);
+          const result = await fetch(
+            "https://pear14.kalbas.com.vn/create-payment-link",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                email: JSON.stringify(parsedBody),
+                amount: 10000,
+              }),
+            }
+          );
+          const url = await result.text();
+          location.href = url;
+        } catch (error) {
+          alert(`Có lỗi xảy ra khi đang thanh toán! Vui lòng thử lại sau!`);
+          submitButton.disabled = false;
+          submitButton.value = "THANH TOÁN NGAY";
+        }
+      }
+
+      function addItem() {
+        if (arrayData.length >= 10) {
+          alert("Tối đa chỉ 10 tài khoản mỗi lần ủng hộ!");
+          return;
+        }
+        itemCount++;
+        const container = document.getElementById("arrayContainer");
+        const itemElement = document.createElement("div");
+        itemElement.innerHTML = `
+          <div class="flex items-center gap-3 array-item w-full">
+            <div class="flex-grow">
+              <input
+                type="text"
+                id="item-${itemCount}"
+                placeholder="Nhập email Coursera"
+                class="input-field px-4 py-3 rounded-xl w-full focus:outline-none transition-all duration-200"
+                oninput="updateArrayData()"
+              >
+            </div>
+            <div class="flex-shrink-0">
+              <button
+                type="button"
+                onclick="removeItem(this)"
+                class="remove-btn w-10 h-10 text-white rounded-full flex items-center justify-center transition-all duration-200 shadow-lg font-bold text-lg"
+              >×</button>
+            </div>
+          </div>
+        `;
+        container.appendChild(itemElement);
+        updateArrayData();
+        setTimeout(() => {
+          document.getElementById(`item-${itemCount}`).focus();
+        }, 100);
+      }
+
+      function removeItem(button) {
+        const container = document.getElementById("arrayContainer");
+        const items = container.querySelectorAll(".array-item");
+        if (items.length <= 1) {
+          alert("Phải có ít nhất một email!");
+          return;
+        }
+        const itemElement = button.closest(".array-item");
+        itemElement.style.animation = "slideOut 0.3s ease-out";
+        setTimeout(() => {
+          itemElement.remove();
+          updateArrayData();
+        }, 250);
+      }
+
+      function updateArrayData() {
+        const container = document.getElementById("arrayContainer");
+        const items = container.querySelectorAll(".array-item");
+        arrayData = [];
+        items.forEach((item, index) => {
+          const input = item.querySelector("input");
+          if (input) {
+            const value = input.value.trim();
+            if (value) arrayData.push(value);
+          }
+        });
+        updateCounter();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        updateArrayData();
+      });
+    </script>
+    <style>
+      @keyframes slideOut {
+        to {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+      }
+    </style>
+  </body>
+</html>

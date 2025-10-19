@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      label {
+        color: rgba(255, 255, 255, 0.95);
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="text-gray-900 quicksand">
+    <div class="max-w-2xl mx-auto p-8 w-full">
+      <div class="glass-card rounded-3xl p-10 fade-in-up">
+        <div class="icon-wrapper floating">
+          <svg
+            class="w-10 h-10 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+            ></path>
+          </svg>
+        </div>
+
+        <h1
+          class="text-5xl font-bold mb-8 text-white text-center uppercase tracking-wide"
+          style="text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2)"
+        >
+          Thanh Toán
+        </h1>
+
+        <form class="w-full space-y-6" id="payment-form">
+          <div class="flex flex-col gap-3">
+            <label for="email" class="text-lg">Email Coursera:</label>
+            <input
+              type="email"
+              class="input-field p-4 rounded-xl w-full focus:outline-none text-gray-800 font-medium"
+              id="email"
+              name="email"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <label for="amount" class="text-lg">Gói đăng ký:</label>
+            <select
+              class="input-field p-4 rounded-xl w-full focus:outline-none text-gray-800 font-medium cursor-pointer"
+              id="amount"
+              name="amount"
+            >
+              <option value="15000" selected>
+                Ủng hộ hiện kim - 15.000 VND
+              </option>
+              <option value="70000">Ủng hộ lâu dài - 70.000 VND</option>
+            </select>
+          </div>
+
+          <input
+            id="submit-button"
+            type="submit"
+            value="THANH TOÁN NGAY"
+            class="submit-btn rounded-xl py-4 px-8 text-white font-bold w-full cursor-pointer uppercase tracking-wider text-lg"
+          />
+
+          <div class="flex justify-between items-center gap-4 pt-4">
+            <a href="/" class="link-hover text-white font-semibold pb-1"
+              ><- Quay lại</a
+            >
+            <a
+              href="/payment-n"
+              class="link-hover text-white font-semibold pb-1"
+              >Ủng hộ nhiều -></a
+            >
+          </div>
+
+          <div class="info-text text-base text-justify">
+            Sau khi chuyển khoản, nếu có lỗi xảy ra hoặc tài khoản chưa được
+            kích hoạt, liên hệ tớ qua
+            <a
+              href="https://www.facebook.com/truong.le.567651"
+              target="_blank"
+              class="link-hover"
+            >
+              Facebook
+            </a>
+            để tiện trao đổi nhé!
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const paymentForm = document.getElementById("payment-form");
+      const amountSelect = document.getElementById("amount");
+      const submitButton = document.getElementById("submit-button");
+      const params = new URLSearchParams(window.location.search);
+      const amount = params.get("amount");
+
+      if (amount) {
+        amountSelect.value = amount;
+      }
+
+      paymentForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = paymentForm.email.value;
+        const amount = paymentForm.amount.value;
+
+        if (!email || !amount) {
+          alert("Vui lòng nhập email Coursera của bạn");
+          return;
+        }
+
+        submitButton.disabled = true;
+        submitButton.value = "Đang xử lý...";
+
+        try {
+          const result = await fetch(
+            "https://pear14.kalbas.com.vn/create-payment-link",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: JSON.stringify([email]), amount }),
+            }
+          );
+
+          const url = await result.text();
+          location.href = url;
+        } catch (error) {
+          alert("Có lỗi xảy ra. Vui lòng thử lại!");
+          submitButton.disabled = false;
+          submitButton.value = "THANH TOÁN NGAY";
+        }
+      });
+    </script>
+  </body>
+</html>
