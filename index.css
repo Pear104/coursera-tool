@@ -1,14 +1,14 @@
 html {
-  cursor: url("/images/default.svg"), auto;
+  cursor: url("/coursera-tool/images/default.svg"), auto;
 }
 
 .cursor-pointer {
-  cursor: url("/images/pointer.svg"), auto !important;
+  cursor: url("/coursera-tool/images/pointer.svg"), auto !important;
 }
 
 a:hover,
 button:hover {
-  cursor: url("/images/pointer.svg"), auto !important;
+  cursor: url("/coursera-tool/images/pointer.svg"), auto !important;
 }
 
 .icon-wrapper {
