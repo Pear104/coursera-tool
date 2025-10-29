@@ -80,6 +80,16 @@
     ]
   },
   {
+    "code": "DSR301m",
+    "status": "done",
+    "moocs": [
+      "/introducton-r-programming-data-science/",
+      "/sql-data-science-r/",
+      "/data-analysis-with-r/",
+      "/data-visualization-r/"
+    ]
+  },
+  {
     "code": "DWP301c",
     "status": "done",
     "moocs": [
