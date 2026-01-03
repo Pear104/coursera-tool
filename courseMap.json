@@ -44,8 +44,14 @@
   },
   {
     "code": "CRY303c",
-    "status": "",
-    "moocs": []
+    "status": "done",
+    "spec": "/applied-crypto/",
+    "moocs": [
+      "/crypto-info-theory/",
+      "/symmetric-crypto/",
+      "/asymmetric-crypto/",
+      "/cryptographic-hash-integrity-protection/"
+    ]
   },
   {
     "code": "CHN132c",
