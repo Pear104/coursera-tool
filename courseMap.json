@@ -21,6 +21,16 @@
     ]
   },
   {
+    "code": "APO201c",
+    "status": "done",
+    "moocs": [
+      "/object-oriented-programming-and-gui-with-python/",
+      "/packt-concurrent-and-parallel-programming-in-python-um1n1/",
+      "/python-network-data/",
+      "/basic-data-processing-visualization-python/"
+    ]
+  },
+  {
     "code": "BDI301c",
     "status": "",
     "moocs": []
