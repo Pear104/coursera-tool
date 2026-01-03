@@ -286,6 +286,11 @@
     ]
   },
   {
+    "code": "IPR102",
+    "status": "done",
+    "moocs": ["/generative-ai-ethical-considerations-and-implications/"]
+  },
+  {
     "code": "ITA203c",
     "status": "done",
     "spec": "/information-systems/",
