@@ -7,7 +7,15 @@
   {
     "code": "AID301c",
     "status": "",
-    "moocs": []
+    "spec": "/ibm-ai-workflow/",
+    "moocs": [
+      "/ibm-ai-workflow-business-priorities-data-ingestion/",
+      "/ibm-ai-workflow-data-analysis-hypothesis-testing/",
+      "/ibm-ai-workflow-feature-engineering-bias-detection/",
+      "/ibm-ai-workflow-machine-learning-vr-nlp/",
+      "/ibm-ai-workflow-machine-learning-model-deployment/",
+      "/ibm-ai-workflow-ai-production/"
+    ]
   },
   {
     "code": "AIG202c",
@@ -22,7 +30,7 @@
   },
   {
     "code": "APO201c",
-    "status": "done",
+    "status": "",
     "moocs": [
       "/object-oriented-programming-and-gui-with-python/",
       "/packt-concurrent-and-parallel-programming-in-python-um1n1/",
@@ -72,6 +80,17 @@
     "code": "CSI106",
     "status": "done",
     "moocs": ["/ai-for-everyone/"]
+  },
+  {
+    "code": "DET101c",
+    "status": "",
+    "spec": "/uva-darden-design-thinking/",
+    "moocs": [
+      "/uva-darden-design-thinking-insights-to-inspiration/",
+      "/uva-darden-design-thinking-ideas-to-action/",
+      "/uva-darden-design-thinking-discovery-tools/",
+      "/uva-darden-experiencing-design/"
+    ]
   },
   {
     "code": "DMA301m",
@@ -314,7 +333,12 @@
   {
     "code": "ITB302c",
     "status": "",
-    "moocs": []
+    "spec": "/google-business-intelligence/",
+    "moocs": [
+      "/foundations-of-business-intelligence/",
+      "/the-path-to-insights-data-models-and-pipelines/",
+      "/decisions-decisions-dashboards-and-reports/"
+    ]
   },
   {
     "code": "ITE302c",
@@ -369,6 +393,11 @@
       "/communicate-with-impact/",
       "/brand-and-content-marketing/"
     ]
+  },
+  {
+    "code": "MGT103",
+    "status": "",
+    "moocs": ["/ethics-of-artificial-intelligence/"]
   },
   {
     "code": "MKT205c",
@@ -534,6 +563,16 @@
       "/agile-software-development/",
       "/lean-software-development/",
       "/engineering-practices-secure-software-quality/"
+    ]
+  },
+  {
+    "code": "SWE202c",
+    "status": "",
+    "moocs": [
+      "/generative-ai-in-software-development/",
+      "/software-engineering-modeling-software-systems-using-uml/",
+      "/software-engineering-implementation-and-testing/",
+      "/software-engineering-software-design-and-project-management/"
     ]
   },
   {
