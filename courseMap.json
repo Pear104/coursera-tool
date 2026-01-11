@@ -567,7 +567,7 @@
   },
   {
     "code": "SWE202c",
-    "status": "",
+    "status": "done",
     "moocs": [
       "/generative-ai-in-software-development/",
       "/software-engineering-modeling-software-systems-using-uml/",
