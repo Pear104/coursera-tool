@@ -369,10 +369,10 @@
     "code": "LAB211",
     "status": "done",
     "moocs": [
-      "/java-introduction/",
-      "/object-oriented-programming-with-java/",
-      "/object-oriented-hierarchies-java/",
-      "/java-class-library/"
+      "/java-programming/",
+      "/java-programming-arrays-lists-data/",
+      "/object-oriented-java/",
+      "/data-structures-optimizing-performance/"
     ]
   },
   {
