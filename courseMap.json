@@ -1,5 +1,30 @@
 [
   {
+    "code": "ADA201c",
+    "status": "done",
+    "moocs": [
+      "/prompt-engineering/",
+      "/openai-custom-gpts/",
+      "/trustworthy-generative-ai/",
+      "/introduction-to-generative-ai-for-data-analysis/"
+    ]
+  },
+  {
+    "code": "ADY201m",
+    "status": "done",
+    "moocs": [
+      "/data-manipulation-with-dplyr-in-r/",
+      "/data-science-methodology/",
+      "/sql-data-science/",
+      "/python-for-applied-data-science-ai/",
+      "/python-project-for-data-science/",
+      "/scikit-learn-to-solve-regression-ml-problems/",
+      "/statistics-for-data-science-python/",
+      "/open-source-tools-for-data-science/",
+      "/what-is-datascience/"
+    ]
+  },
+  {
     "code": "ANO301c",
     "status": "",
     "moocs": []
