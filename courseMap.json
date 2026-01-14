@@ -107,8 +107,13 @@
     "moocs": ["/ai-for-everyone/"]
   },
   {
+    "code": "CSP201m",
+    "status": "done",
+    "moocs": ["/prompt-engineering-generative-ai-for-marketing-advertising/"]
+  },
+  {
     "code": "DET101c",
-    "status": "",
+    "status": "done",
     "spec": "/uva-darden-design-thinking/",
     "moocs": [
       "/uva-darden-design-thinking-insights-to-inspiration/",
@@ -199,6 +204,18 @@
     ]
   },
   {
+    "code": "EBC301c",
+    "status": "done",
+    "spec": "/business-english/",
+    "moocs": [
+      "/business-english-intro/",
+      "/business-english-meetings/",
+      "/business-english-negotiating/",
+      "/business-english-presentations/",
+      "/business-english-capstone/"
+    ]
+  },
+  {
     "code": "ELP321c",
     "status": "",
     "moocs": []
@@ -226,11 +243,6 @@
   },
   {
     "code": "ENG302c",
-    "status": "",
-    "moocs": []
-  },
-  {
-    "code": "EBC301c",
     "status": "",
     "moocs": []
   },
