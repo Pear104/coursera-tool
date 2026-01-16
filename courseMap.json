@@ -295,12 +295,38 @@
     ]
   },
   {
+    "code": "FIM306c",
+    "status": "done",
+    "spec": "/financial-reporting/",
+    "moocs": [
+      "/accounting-information-system/",
+      "/asset-measurement-disclosure/",
+      "/accounting-analysis-2-liabilities/",
+      "/accounting-analysis-2-equity/",
+      "/financial-reporting-capstone/"
+    ]
+  },
+  {
     "code": "FRS401c",
     "status": "done",
     "moocs": [
       "/access-controls/",
       "/security-operations/",
       "/systems-and-application-security/"
+    ]
+  },
+  {
+    "code": "GPM201c",
+    "status": "",
+    "spec": "/google-project-management/",
+    "moocs": [
+      "/project-management-foundations/",
+      "/project-initiation-google/",
+      "/project-planning-google/",
+      "/project-execution-google/",
+      "/agile-project-management/",
+      "/applying-project-management/",
+      "/accelerate-your-job-search-with-ai/"
     ]
   },
   {
@@ -542,6 +568,16 @@
       "/architecting-solutions-on-aws/",
       "/introduction-to-designing-data-lakes-in-aws/",
       "/aws-certified-solutions-architect-associate/"
+    ]
+  },
+  {
+    "code": "PRJ301",
+    "status": "done",
+    "spec": "/java-servlet-development-from-basics-to-real-world-projects/",
+    "moocs": [
+      "/java-servlets-tutorial/",
+      "/java-servlets-case-study-email-marketing-tool/",
+      "/java-servlets-case-study-online-admission-process/"
     ]
   },
   {
