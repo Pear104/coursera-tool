@@ -458,11 +458,6 @@
     ]
   },
   {
-    "code": "MGT103",
-    "status": "done",
-    "moocs": ["/ethics-of-artificial-intelligence/"]
-  },
-  {
     "code": "MKT205c",
     "status": "done",
     "spec": "/international-marketing/",
