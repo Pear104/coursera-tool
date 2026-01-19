@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -129,13 +129,13 @@
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email: JSON.stringify([email]), amount }),
-            }
+            },
           );
 
           const url = await result.text();
           location.href = url;
         } catch (error) {
-          alert("Có lỗi xảy ra. Vui lòng thử lại!");
+          alert("Nếu đang xài mạng FPT thì đổi sang mạng khác nhé!");
           submitButton.disabled = false;
           submitButton.value = "THANH TOÁN NGAY";
         }
