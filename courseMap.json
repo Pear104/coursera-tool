@@ -242,6 +242,17 @@
     ]
   },
   {
+    "code": "EMF301c",
+    "status": "done",
+    "spec": "/electrodynamics/",
+    "moocs": [
+      "/electrodynamics-introduction/",
+      "/electrodynamics-analysis-of-electric-fields/",
+      "/electrodynamics-electric-magnetic-fields/",
+      "/electrodynamics-solutions-maxwells-equations/"
+    ]
+  },
+  {
     "code": "ENG302c",
     "status": "",
     "moocs": []
