@@ -328,7 +328,7 @@
   },
   {
     "code": "GPM201c",
-    "status": "",
+    "status": "done",
     "spec": "/google-project-management/",
     "moocs": [
       "/project-management-foundations/",
