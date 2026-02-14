@@ -294,6 +294,18 @@
     ]
   },
   {
+    "code": "ETB201c",
+    "status": "done",
+    "moocs": [
+      "/music-business-foundations/",
+      "/copyright-law-music-business/",
+      "/how-to-make-money-with-your-music-copyrights/",
+      "/creativity-entrepreneurship/",
+      "/fandom-social-media-authenticity-digital-age/",
+      "/fandom-community-identity-popular-music/"
+    ]
+  },
+  {
     "code": "FIM302c",
     "status": "done",
     "spec": "/startup-valuation/",
@@ -406,7 +418,7 @@
   },
   {
     "code": "ITB302c",
-    "status": "",
+    "status": "done",
     "spec": "/google-business-intelligence/",
     "moocs": [
       "/foundations-of-business-intelligence/",
