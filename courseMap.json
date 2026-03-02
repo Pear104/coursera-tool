@@ -518,6 +518,22 @@
     ]
   },
   {
+    "code": "MKT304",
+    "status": "done",
+    "moocs": [
+      "/prompt-engineering-generative-ai-for-marketing-advertising/",
+      "/chatgpt-for-beginners-market-research-ai/",
+      "/introduction-to-business-analytics/",
+      "/business-analysis-process/",
+      "/data-ecosystem/",
+      "/introduction-to-tableau/",
+      "/data-visualization-with-tableau-public/",
+      "/advanced-data-visualization-with-tableau-public/",
+      "/data-analysis-with-tableau-public/",
+      "/communicating-data-insights-with-tableau/"
+    ]
+  },
+  {
     "code": "MSM201c",
     "status": "done",
     "spec": "/facebook-social-media-marketing/",
