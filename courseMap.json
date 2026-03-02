@@ -112,6 +112,17 @@
     "moocs": ["/prompt-engineering-generative-ai-for-marketing-advertising/"]
   },
   {
+    "code": "DAP391m",
+    "status": "done",
+    "moocs": [
+      "/data-analysis-with-python/",
+      "/python-for-data-visualization/",
+      "/applied-data-science-capstone/",
+      "/simple-linear-regression-for-the-absolute-beginner/",
+      "/predict-ad-clicks-using-logistic-regression-and-xg-boost/"
+    ]
+  },
+  {
     "code": "DET101c",
     "status": "done",
     "spec": "/uva-darden-design-thinking/",
