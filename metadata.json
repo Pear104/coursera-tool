@@ -2,6 +2,6 @@
   "url": "https://pear14.kalbas.com.vn",
   "scriptPosition": 10,
   "ext": ["https://otieu.com/4/9795608"],
-  "version": "1.0.7",
+  "version": "1.0.8",
   "modelList": ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemma-4-31b-it"]
 }
