@@ -55,7 +55,7 @@
   },
   {
     "code": "AIL303m",
-    "status": "",
+    "status": "done",
     "spec": "/ibm-intro-machine-learning/",
     "moocs": [
       "/ibm-exploratory-data-analysis-for-machine-learning/",
